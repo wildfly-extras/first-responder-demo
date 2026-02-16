@@ -1,2 +1,3 @@
 /subsystem=undertow/server=default-server/host=default-host:write-attribute(name=default-web-module, value=frdemo-backend.war)
 /subsystem=deployment-scanner/scanner=default:write-attribute(name=scan-interval,value=0)
+/subsystem=jaxrs:write-attribute(name=resteasy-prefer-jackson-over-jsonb, value=true)
